@@ -1,0 +1,123 @@
+<!--Code Template from Eric Tirado on Scrimba-->
+<!--@Author: Tommy Hessel-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
+        document.title = "Tommy Hessel"
+    </script>
+</head>
+
+<body id="home" class="open-left">
+    <div id="offcanvas-left" class="hide">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Picture">Picutre</a></li>
+            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Video">Video</a></li>
+            <li><a href="#Form">Form</a></li>
+        </ul>
+    </div>
+    <div class="togglebar">
+        <div class="toggle" onclick="toggleLeft()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    <div class="center">
+        <header>
+            <nav>
+                <p style="text-align:center;"><b>Tommy Hessel</b></p>
+                <p style="text-align:center;">GitHub - Hesselt17</p>
+            </nav>
+        </header>
+        <section>
+            <main id="Home">
+                <article>
+                    <figure id="Picture" class="resize">
+                        <img src="image/greece.JPG" alt="" />
+                    </figure>
+                    <h2 id="About Me" style="font-size: 2em"> About Me</h2>
+                    <hr>
+                    <p>
+                        <b>Tommy Hessel</b> is a rising junior at Duke University stuyding Computer Science, Energy & the Environment, and Economics. At Duke, Tommy serves as a member of the student government, a staffer for a pre-orientation program,
+                        and a Teaching Assistant for Computer Science 101. Tommy will be back in Durham for the second half of summer where he will be taking statistics summer school courses.
+                    </p>
+                    <p>
+                        Being from Texas, he grew up around hiking, fishing, hunting, and all things outdoors. Tommy was also an avid lacrosse player and rower throughtout highschool, as well as an amateur soccer player. In his spare time, Tommy enjoys finding interesting youtube
+                        videos, 3D printing, and reading. He is looking forward to watching Duke lacrosse in the NCAA finals and having a great time in Lisbon!
+                    </p>
+                    <p>
+                        My GitHub username is <b>Hesselt17</b> and is pretty straightforward. (20)17 was the year in which I graduated highschool and was my number in sports growing up. But a fun fact with most my other usernames is that they usually
+                        have some arrangement of 214 which is both my area code and birthday (2/14).
+                    </p>
+                </article>
+                <article>
+                    <h2 id="Video" style="font-size: 2em">Video</h2>
+                    <hr>
+                    <div class="responsive-vid">
+                        <video controls preload width="350" height="200">
+                                    <source src="video/turtleMaskOff.mp4" type="video/mp4">
+                                </video>
+                    </div>
+                </article>
+                <article>
+                    <h2 style="font-size: 2em"> Form</h2>
+                    <hr id="Form">
+                    <form action="/formResponse.php">
+                        <input type="text" name="Name" placeholder="Name"></input>
+                        <textarea name="Fun Fact" placeholder="Write Fun Fact Here"></textarea>
+                        <fieldset>
+                            <h3>Biome of Choice</h3><br>
+                            <div class="adj">
+                                <input type="radio" class="radio" name="Vacation" value="Beach" id="B" />
+                                <label for="B">Beach</label>
+                                <input type="radio" class="radio" name="Vacation" value="Mountain" id="M" />
+                                <label for="M">Mountain</label>
+                                <input type="radio" class="radio" name="Vacation" value="Desert" id="D" />
+                                <label for="D">Desert</label>
+                                <input type="radio" class="radio" name="Vacation" value="Deciduous Forest" id="DF" />
+                                <label for="DF">Deciduous Forest</label>
+                                <input type="radio" class="radio" name="Vacation" value="Tropical Forest" id="TF" />
+                                <label for="TF">Grasslands</label>
+                                <input type="radio" class="radio" name="Vacation" value="Tundra" id="T" />
+                                <label for="T">Tundra</label>
+                                <input type="radio" class="radio" name="Vacation" value="Other" id="O" />
+                                <label for="O">Other</label>
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <h3>Biomes Visited</h3><br>
+                            <div class="adj">
+                                <input type="checkbox" class="radio" name="Vacation" value="Beach" id="B" />
+                                <label for="B">Beach</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Mountain" id="M" />
+                                <label for="M">Mountain</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Desert" id="D" />
+                                <label for="D">Desert</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Deciduous Forest" id="DF" />
+                                <label for="DF">Deciduous Forest</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Tropical Forest" id="TF" />
+                                <label for="TF">Grasslands</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Tundra" id="T" />
+                                <label for="T">Tundra</label>
+                                <input type="checkbox" class="radio" name="Vacation" value="Other" id="O" />
+                                <label for="O">Other</label>
+                            </div>
+                        </fieldset>
+
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                </article>
+            </main>
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+
+</html>

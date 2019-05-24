@@ -1,0 +1,270 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+
+/*Need for Top Left Symbol*/
+
+
+/*Code Template from Eric Tirado on Scrimba
+ @Author: Tommy Hessel
+*/
+
+
+/* Base */
+
+#home {
+    --first-color: #00009c;
+    /*Duke blue hex code*/
+    --second-color: #292929;
+}
+
+html,
+body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: var(--first-color);
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+}
+
+
+/* Center & Header */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 95%;
+}
+
+.center header {
+    background-color: var(--first-color);
+    color: white;
+}
+
+header {
+    background-color: blueviolet;
+    flex: 0 0 40px;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    background-color: transparent;
+}
+
+.center section {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+
+/* Toggle Bar and Action */
+
+#offcanvas-left,
+#offcanvas-right {
+    flex: 0 0 280px;
+    background-color: #363636;
+    color: white;
+    transition-duration: .3s;
+}
+
+#offcanvas-left.hide {
+    margin-left: -280px;
+}
+
+#offcanvas-right.hide {
+    margin-right: -280px;
+}
+
+.togglebar {
+    background-color: var(--second-color);
+    flex: 0 0;
+    min-width: 70px;
+    max-width: 5px;
+}
+
+.toggle i {
+    height: 80px;
+    font-size: 1.4em;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+}
+
+.toggle i:hover {
+    color: var(--first-color);
+}
+
+#offcanvas-left ul,
+#offcanvas-right ul {
+    padding: 0
+}
+
+#offcanvas-left ul li,
+#offcanvas-right ul li {
+    color: white;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding: 10px;
+    border-bottom: 1px solid #222
+}
+
+#offcanvas-left a,
+#offcanvas-right a {
+    color: white;
+    text-decoration: none;
+}
+
+#offcanvas-left li:hover a,
+#offcanvas-right li:hover a {
+    color: var(--first-color);
+}
+
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-column-gap: 20px;
+    background-color: var(--first-color);
+    flex: 0 0 80px;
+    flex-direction: row;
+}
+
+
+/* Form */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+textarea {
+    margin: 10px 0;
+    border: 0;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form input[type=submit] {
+    background-color: var(lightgray);
+}
+
+form input:hover {
+    text-decoration: underline;
+}
+
+form textarea {
+    min-height: 60px;
+    max-height: 100px;
+    resize: vertical;
+}
+
+fieldset {
+    overflow: hidden;
+}
+
+.adj {
+    float: left;
+    clear: none;
+}
+
+label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0 1em 0 0;
+    margin-left: 5px;
+}
+
+input[type=radio],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+}
+
+
+/* Layout */
+
+article {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-column-gap: 10px;
+    padding-bottom: 10px;
+}
+
+article>* {
+    grid-column: 2;
+    min-width: 0;
+}
+
+hr {
+    background-color: var(--first-color);
+    height: 2px;
+    width: 100%;
+    border: 0;
+}
+
+
+/* Image */
+
+figure.resize {
+    position: relative;
+    left: 36%;
+    top: 15%;
+    height: 10vh;
+    width: 20vw;
+    padding-left: 0;
+    padding-bottom: 25%;
+    overflow: hidden;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Video */
+
+.responsive-vid {
+    position: relative;
+    padding-bottom: 42%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.responsive-vid iframe,
+.responsive-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+}
