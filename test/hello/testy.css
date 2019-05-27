@@ -1,0 +1,54 @@
+head {
+    background-color: red;
+}
+
+p {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(255, 174, 0);
+    overflow: scroll;
+}
+
+header {
+    background-color: red;
+    padding: 5em;
+}
+
+nav {
+    background-color: white;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-column-gap: 20px;
+}
+
+nav.reSize {
+    width: 70%;
+    height: 70%;
+}
+
+#reColor {
+    background-color: aquamarine;
+}
+
+section {
+    background-color: cyan;
+}
+
+div {
+    background-color: yellow;
+}
+
+label {
+    color: black;
+    background-color: grey;
+    size: initial;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
